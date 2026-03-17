@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Works - Expert Web Development, AI Automation & SEO Services</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Musa Works offers cost-effective and trustworthy web development, AI automation, and SEO services to boost your online presence.">
+    <meta name="keywords" content="web development, AI automation, SEO, website design, digital marketing, Musa Works, affordable web services, trustworthy web development">
+    <meta name="author" content="Musa Works">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:title" content="Musa Works - Expert Web Development, AI Automation & SEO Services">
+    <meta property="og:description" content="Musa Works offers cost-effective and trustworthy web development, AI automation, and SEO services to boost your online presence.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504813184599-115427e7f206?fm=webp&w=800&h=400&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.example.com/">
+    <meta property="twitter:title" content="Musa Works - Expert Web Development, AI Automation & SEO Services">
+    <meta property="twitter:description" content="Musa Works offers cost-effective and trustworthy web development, AI automation, and SEO services to boost your online presence.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1504813184599-115427e7f206?fm=webp&w=800&h=400&fit=crop">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#2c1d0e',
+                        'brand-secondary': '#5a3a1e',
+                        'brand-accent': '#a87c50',
+                        'dark-text': '#333',
+                        'light-text': '#f8f8f8',
+                        'gray-bg': '#f4f4f4',
+                        'form-error': '#f87171',
+                        'form-success': '#34d399'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Montserrat', 'Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 31, 31, 0.37)',
+                        'card-hover': '0 10px 20px rgba(0,0,0,0.2)',
+                    },
+                    backdropFilter: {
+                        'blur-lg': 'blur(15px)',
+                    },
+                    transitionDuration: {
+                        'DEFAULT': '300ms',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .btn-primary {
+            background-color: #2c1d0e;
+            color: #fff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #5a3a1e;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #5a3a1e;
+            color: #fff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #2c1d0e;
+            transform: translateY(-2px);
+        }
+        .btn-outline-dark {
+            border: 1px solid #2c1d0e;
+            color: #2c1d0e;
+            background-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-outline-dark:hover {
+            background-color: #2c1d0e;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .nav-blur {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .focus-visible:focus {
+            outline: 2px solid #a87c50;
+            outline-offset: 2px;
+        }
+        .carousel-control {
+            transition: opacity 0.15s ease-in-out;
+        }
+        .carousel-control:hover {
+            opacity: .9;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #2c1d0e;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full nav-blur">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#hero" class="flex items-center text-brand-primary no-underline hover:text-brand-secondary">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                        <path d="M3 8L12 3L21 8" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M12 13V21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M7 8.5V15C7 17 9 19 12 19C15 19 17 17 17 15V8.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-2xl font-bold font-poppins">Musa Works</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="nav-link text-dark-text hover:text-brand-primary font-medium">Services</a>
+                <a href="#portfolio" class="nav-link text-dark-text hover:text-brand-primary font-medium">Portfolio</a>
+                <a href="#about" class="nav-link text-dark-text hover:text-brand-primary font-medium">About Us</a>
+                <a href="#contact" class="nav-link text-dark-text hover:text-brand-primary font-medium">Contact</a>
+                <a href="#contact" class="btn-primary px-6 py-2 rounded-lg text-white font-semibold focus-visible:outline-offset-4">Get a Quote</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" aria-label="Toggle mobile menu" aria-expanded="false" class="focus-visible:outline-offset-4">
+                    <svg class="w-8 h-8 text-dark-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-sm absolute top-full left-0 w-full py-4 shadow-lg">
+            <a href="#services" class="block px-4 py-2 text-dark-text hover:bg-brand-secondary hover:text-white">Services</a>
+            <a href="#portfolio" class="block px-4 py-2 text-dark-text hover:bg-brand-secondary hover:text-white">Portfolio</a>
+            <a href="#about" class="block px-4 py-2 text-dark-text hover:bg-brand-secondary hover:text-white">About Us</a>
+            <a href="#contact" class="block px-4 py-2 text-dark-text hover:bg-brand-secondary hover:text-white">Contact</a>
+            <a href="#contact" class="block px-4 py-2 btn-primary text-center mx-4 my-2 rounded-lg text-white font-semibold">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Product image" style="max-width:100%;">
+                <div class="absolute inset-0 bg-black opacity-60"></div>
+            </div>
+            <div class="relative z-10 px-4 max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 font-poppins leading-tight">
+                    Unlock Your Digital Potential with Musa Works
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 font-inter font-light max-w-3xl mx-auto">
+                    Cost-effective and trustworthy web development, AI automation, and SEO services designed to elevate your business online.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#services" class="btn-secondary px-8 py-4 rounded-lg text-lg font-semibold focus-visible:outline-offset-4">Explore Services</a>
+                    <a href="#contact" class="btn-outline-dark px-8 py-4 rounded-lg text-lg font-semibold focus-visible:outline-offset-4">Get a Free Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-4xl font-bold mb-6 font-poppins">About Musa Works</h2>
+                        <p class="text-lg mb-6 font-inter leading-relaxed">
+                            Founded by [Your Name], Musa Works is built on a foundation of trust and a passion for delivering exceptional digital solutions without breaking the bank. We understand the challenges businesses face in today's digital landscape, and we're here to provide clear, effective, and affordable strategies for your web presence. Our team brings years of experience in crafting robust websites, implementing smart AI automation, and optimizing for search engines to ensure your business thrives.
+                        </p>
+                        <p class="text-lg font-inter leading-relaxed">
+                            We believe in transparent communication and measurable results. Let us be your reliable partner in navigating the complexities of the digital world.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#contact" class="btn-primary px-7 py-3 rounded-lg text-white font-semibold text-lg focus-visible:outline-offset-4">Learn More About Us</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Product image" style="max-width:100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-bg">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 font-poppins">Our Comprehensive Services</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="card text-center p-6 transform transition duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601" alt="Product image" style="max-width:100%;">
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Web Development</h3>
+                        <p class="text-lg font-inter leading-relaxed">
+                            Custom website design and development, e-commerce solutions, and performance optimization to create engaging online experiences.
+                        </p>
+                    </div>
+
+                    <div class="card text-center p-6 transform transition duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3" alt="Product image" style="max-width:100%;">
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">AI Automation</h3>
+                        <p class="text-lg font-inter leading-relaxed">
+                            Leverage the power of artificial intelligence to automate repetitive tasks, streamline workflows, and boost operational efficiency.
+                        </p>
+                    </div>
+
+                    <div class="card text-center p-6 transform transition duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1547887537-8959be2a4e3a" alt="Product image" style="max-width:100%;">
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">SEO Optimization</h3>
+                        <p class="text-lg font-inter leading-relaxed">
+                            Boost your search engine rankings with expert SEO strategies, driving organic traffic and increasing your online visibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 font-poppins">Why Choose Musa Works?</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Cost-Effective</h3>
+                        <p class="text-lg font-inter">
+                            Premium services without the premium price tag. We deliver high value for your investment.
+                        </p>
+                    </div>
+                    <div class="p-6">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Trustworthy</h3>
+                        <p class="text-lg font-inter">
+                            Honest communication, transparent processes, and a commitment to your success.
+                        </p>
+                    </div>
+                    <div class="p-6">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Expertise</h3>
+                        <p class="text-lg font-inter">
+                            A dedicated team with deep knowledge in web development, AI, and SEO.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 bg-gray-bg">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 font-poppins">Our Recent Work</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 font-poppins">E-commerce Platform</h3>
+                            <p class="text-lg mb-4 font-inter">
+                                Developed a scalable e-commerce solution for a growing retail brand, boosting sales by 30%.
+                            </p>
+                            <a href="#" class="btn-secondary px-4 py-2 rounded-lg text-white font-semibold text-sm focus-visible:outline-offset-4">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 font-poppins">AI Analytics Tool</h3>
+                            <p class="text-lg mb-4 font-inter">
+                                Created an AI-driven analytics dashboard to provide actionable insights for marketing campaigns.
+                            </p>
+                            <a href="#" class="btn-secondary px-4 py-2 rounded-lg text-white font-semibold text-sm focus-visible:outline-offset-4">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 font-poppins">SEO for SaaS</h3>
+                            <p class="text-lg mb-4 font-inter">
+                                Implemented targeted SEO strategies for a SaaS company, resulting in a 50% increase in organic leads.
+                            </p>
+                            <a href="#" class="btn-secondary px-4 py-2 rounded-lg text-white font-semibold text-sm focus-visible:outline-offset-4">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 font-poppins">What Our Clients Say</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="card p-6">
+                        <p class="text-lg italic mb-6 font-inter leading-relaxed">
+                            "Musa Works transformed our online presence! Their team delivered a stunning website on time and within budget. Highly recommended for their professionalism and cost-effectiveness."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+                            <div>
+                                <p class="font-bold text-xl font-poppins">Jane Doe</p>
+                                <p class="text-sm text-gray-700 font-inter">CEO, Tech Innovators Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-6">
+                        <p class="text-lg italic mb-6 font-inter leading-relaxed">
+                            "The AI automation solutions provided by Musa Works have significantly improved our efficiency. Their expertise and dedication are truly commendable. They are incredibly trustworthy."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+                            <div>
+                                <p class="font-bold text-xl font-poppins">John Smith</p>
+                                <p class="text-sm text-gray-700 font-inter">Operations Manager, Global Logistics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-6">
+                        <p class="text-lg italic mb-6 font-inter leading-relaxed">
+                            "Our website traffic has skyrocketed thanks to Musa Works' SEO services. They delivered outstanding results at a very competitive price. A truly cost-effective partner."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+                            <div>
+                                <p class="font-bold text-xl font-poppins">Emily Carter</p>
+                                <p class="text-sm text-gray-700 font-inter">Marketing Director, Retail Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-16 bg-gray-bg">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 font-poppins">How We Work</h2>
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="p-4">
+                        <div class="w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold font-poppins">1</div>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Discovery</h3>
+                        <p class="text-lg font-inter">Understand your goals and requirements.</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold font-poppins">2</div>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Strategy</h3>
+                        <p class="text-lg font-inter">Develop a tailored digital strategy.</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold font-poppins">3</div>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Execution</h3>
+                        <p class="text-lg font-inter">Design, develop, and implement solutions.</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold font-poppins">4</div>
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Delivery & Support</h3>
+                        <p class="text-lg font-inter">Launch and provide ongoing support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="relative py-16 bg-brand-primary text-white">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Fallback">
+            </div>
+            <div class="relative z-10 container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 font-poppins">Ready to Elevate Your Business?</h2>
+                <p class="text-xl md:text-2xl mb-10 font-inter font-light">
+                    Let's discuss your project and how our expertise can drive your success.
+                </p>
+                <a href="#contact" class="btn-secondary px-10 py-5 rounded-lg text-xl font-bold focus-visible:outline-offset-4">Get Your Free Quote Today</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 font-poppins">Get In Touch</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-3xl font-bold mb-6 font-poppins">Let's Build Something Great</h3>
+                        <p class="text-lg mb-6 font-inter leading-relaxed">
+                            We're here to answer your questions and help you achieve your digital goals. Fill out the form or reach out directly.
+                        </p>
+                        <div class="space-y-4 font-inter text-lg">
+                            <p><span class="font-bold">Email:</span> info@musaworks.com</p>
+                            <p><span class="font-bold">Phone:</span> 03104220217</p>
+                            <p><span class="font-bold">Address:</span> 123 Digital Way, Innovation City</p>
+                        </div>
+                        <div class="mt-8 flex space-x-4 justify-center md:justify-start">
+                            <a href="#" aria-label="Facebook" class="hover:text-brand-primary transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v10h4v-10h3l1-4h-3V7a1 1 0 011-1h3V2h-3a2 2 0 00-2 2v1z"/></svg></a>
+                            <a href="#" aria-label="Twitter" class="hover:text-brand-primary transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M18.24 9.3c0-.3.0-.6.0-.9 0-4.7-3.6-10.3-10.3-10.3-3.1 0-6 .9-8.4 2.5 1.5-.0 3-.4 4.4-.6C2.7 1.5 5.4 0 8.2 0 4.5 0 1.4 2.4 0 6c1.4-.2 2.8-.3 4.3-.3 4.5 0 8.7 2 11.2 5.4-1.4-.2-2.8-.4-4.4-.4-4.4 0-8.1 2.9-9.2 6.9.9-.1 1.9-.1 2.9-.1 7.4 0 13.4-5 15.6-12.2z"/></svg></a>
+                            <a href="#" aria-label="LinkedIn" class="hover:text-brand-primary transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 18h-2v-10h2v10zm-2-11c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-0.672 1.5-1.5 1.5zm15 11h-2v-6.5c0-1.939-1.561-3.5-3.5-3.5-1.939 0-3.5 1.561-3.5 3.5v6.5h-2v-10h2v1.5c0-.5.731-1.2 1.2-1.2h4.6c.468 0 1.2.7 1.2 1.2v8.8z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="card p-8 shadow-xl">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <div class="mb-5">
+                                <label for="name" class="block text-lg font-medium mb-2 font-inter">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name"
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-secondary focus-visible:outline-offset-4 font-inter">
+                            </div>
+                            <div class="mb-5">
+                                <label for="email" class="block text-lg font-medium mb-2 font-inter">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email"
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-secondary focus-visible:outline-offset-4 font-inter">
+                            </div>
+                            <div class="mb-5">
+                                <label for="message" class="block text-lg font-medium mb-2 font-inter">Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project"
+                                          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-secondary focus-visible:outline-offset-4 font-inter"></textarea>
+                            </div>
+                            <div id="form-status" class="mb-5 text-center p-3 rounded-lg hidden"></div>
+                            <button type="submit" id="submit-button"
+                                    class="btn-primary w-full py-4 rounded-lg text-xl font-bold text-white flex items-center justify-center focus-visible:outline-offset-4">
+                                <span id="button-text">Send Message</span>
+                                <span id="spinner" class="loading-spinner hidden ml-3"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-brand-primary text-light-text">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <a href="#hero" class="flex items-center text-light-text no-underline hover:text-brand-accent mb-4">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                            <path d="M3 8L12 3L21 8" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M12 13V21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M7 8.5V15C7 17 9 19 12 19C15 19 17 17 17 15V8.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-2xl font-bold font-poppins">Musa Works</span>
+                    </a>
+                    <p class="text-lg font-inter leading-relaxed">
+                        Your trusted partner for cost-effective web development, AI automation, and SEO services.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 font-poppins">Quick Links</h4>
+                    <ul class="font-inter space-y-2">
+                        <li><a href="#services" class="hover:text-brand-accent">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-brand-accent">Portfolio</a></li>
+                        <li><a href="#about" class="hover:text-brand-accent">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-brand-accent">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 font-poppins">Contact Us</h4>
+                    <p class="font-inter mb-2">03104220217</p>
+                    <p class="font-inter">info@musaworks.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center font-inter text-sm">
+                <p>&copy; 2023 Musa Works. All rights reserved.</p>
+                <div class="mt-2 flex justify-center space-x-4">
+                    <a href="#" class="hover:text-brand-accent">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-accent">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Close mobile menu if clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu on Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-button');
+        const buttonText = document.getElementById('button-text');
+        const spinner = document.getElementById('spinner');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            formStatus.classList.add('hidden');
+            buttonText.textContent = 'Sending...';
+            submitButton.disabled = true;
+            spinner.classList.remove('hidden');
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.code === 200) {
+                    formStatus.textContent = 'Message sent successfully!';
+                    formStatus.classList.remove('hidden', 'error-message');
+                    formStatus.classList.add('success-message');
+                    contactForm.reset();
+                } else {
+                    formStatus.textContent = `Error: ${result.message || 'Something went wrong. Please try again.'}`;
+                    formStatus.classList.remove('hidden', 'success-message');
+                    formStatus.classList.add('error-message');
+                }
+            } catch (error) {
+                formStatus.textContent = 'Network Error. Please check your connection or try again later.';
+                formStatus.classList.remove('hidden', 'success-message');
+                formStatus.classList.add('error-message');
+            } finally {
+                buttonText.textContent = 'Send Message';
+                submitButton.disabled = false;
+                spinner.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
