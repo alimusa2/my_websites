@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Bikes - Premium Bike Showroom & Rentals</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover the latest and classic motorcycle models at Classic Bikes. We offer premium bike sales, rentals, and expert advice. Your trusted destination for all things bikes.">
+    <meta name="keywords" content="classic bikes, motorcycle showroom, bike rental, bike sale, premium bikes, latest bikes, used bikes, motorcycle dealership, [Your City/Region]">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_WEBSITE_URL"> <!-- Replace with your actual website URL -->
+    <meta property="og:title" content="Classic Bikes - Premium Bike Showroom & Rentals">
+    <meta property="og:description" content="Discover the latest and classic motorcycle models at Classic Bikes. We offer premium bike sales, rentals, and expert advice. Your trusted destination for all things bikes.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486312128473-e90b74357835?fm=webp&w=1200&h=630&fit=crop"> <!-- Placeholder - replace with a compelling image -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="YOUR_WEBSITE_URL"> <!-- Replace with your actual website URL -->
+    <meta name="twitter:title" content="Classic Bikes - Premium Bike Showroom & Rentals">
+    <meta name="twitter:description" content="Discover the latest and classic motorcycle models at Classic Bikes. We offer premium bike sales, rentals, and expert advice. Your trusted destination for all things bikes.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1486312128473-e90b74357835?fm=webp&w=1200&h=630&fit=crop"> <!-- Placeholder - replace with a compelling image -->
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Classic Bikes",
+      "url": "YOUR_WEBSITE_URL",
+      "logo": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMyA4TDEyIDNMjEgOCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHBhdGggZD0iTTEyIDEzVjIxIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHBhdGggZD0iTTcgOC41VjE1QzcgMTcgOSAxOSAxMiAxOUMxNSAxOSA3IDE3IDcgMTVWLjUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "0310-222",
+        "contactType": "Sales",
+        "areaServed": ["[Your City]", "[Your Region]"] // e.g., "Multan", "Punjab"
+      },
+      "sameAs": [
+        "YOUR_FACEBOOK_URL", // Optional
+        "YOUR_INSTAGRAM_URL", // Optional
+        "YOUR_TWITTER_URL" // Optional
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Classic Bikes"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "YOUR_WEBSITE_URL/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Classic Bikes",
+      "description": "Premium bike showroom offering sales and rentals.",
+      "url": "YOUR_WEBSITE_URL",
+      "telephone": "0310-222",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Your Street Address]", // e.g., "123 Main Street"
+        "addressLocality": "[Your City]", // e.g., "Multan"
+        "addressRegion": "[Your Region]", // e.g., "Punjab"
+        "postalCode": "[Your Postal Code]" // e.g., "60000"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[Your Latitude]", // e.g., 30.1575
+        "longitude": "[Your Longitude]" // e.g., 71.4721
+      },
+      "image": "https://images.unsplash.com/photo-1486312128473-e90b74357835?fm=webp&w=1200&h=630&fit=crop",
+      "sameAs": [
+        "YOUR_FACEBOOK_URL",
+        "YOUR_INSTAGRAM_URL",
+        "YOUR_TWITTER_URL"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMyA4TDEyIDNMjEgOCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpb<bos>nJvdW5kIi8+CiAgPHBhdGggZD0iTTEyIDEzVjIxIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpb HumphreysJv" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-dark': '#1a1a1a',
+              'primary-brown': '#3b2f2f',
+              'accent-hover': '#e6e6e6',
+              'gray-light': '#f5f5f5',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Montserrat', 'sans-serif'],
+              body: ['Poppins', 'sans-serif'],
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
+              'card-hover': '0 10px 20px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06)',
+            },
+            backdropFilter: {
+              'blur': 'blur(5px)',
+            },
+            transitionProperty: {
+              'all': 'all',
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Custom styles for smooth scrolling and focus */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Glassmorphism navbar */
+      .glassmorphism-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      }
+
+      /* Hover effects */
+      .group:hover .group-hover\:scale-105 {
+        transform: scale(1.05);
+      }
+      .group:hover .group-hover\:shadow-lg {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .group:hover .group-hover\:text-primary-dark {
+        color: #1a1a1a; /* Primary dark */
+      }
+      .group:hover .group-hover\:border-primary-dark {
+        border-color: #1a1a1a; /* Primary dark */
+      }
+
+      /* Focus visible styles for accessibility */
+      :focus-visible {
+        outline: 2px solid #0000ff; /* Or your preferred focus color */
+        outline-offset: 4px;
+      }
+
+      /* Loading spinner */
+      .lds-dual-ring {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin: 4px;
+        border-radius: 50%;
+        border: 3px solid #fff; /* White spinner on dark background */
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Mobile menu */
+      .mobile-menu-open {
+        transform: translateX(0%);
+      }
+
+      /* Scrollbar styles (optional) */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3b2f2f; /* Primary brown */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1a1a1a; /* Primary dark */
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header: Sticky Glassmorphism Navbar -->
+    <header class="sticky top-0 z-50 w-full py-4 glassmorphism-nav">
+        <div class="container px-4 mx-auto">
+            <div class="flex items-center justify-between">
+                <!-- Logo and Brand Name -->
+                <div class="flex items-center space-x-2">
+                    <a href="#hero" class="flex items-center text-primary-dark hover:text-primary-brown">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 8L12 3L21 8" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                          <path d="M12 13V21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M7 8.5V15C7 17 9 19 12 19C15 19 17 17 17 15V8.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-2xl font-bold font-heading">Classic Bikes</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex">
+                    <ul class="flex space-x-8">
+                        <li><a href="#about" class="font-medium transition hover:text-primary-brown">About Us</a></li>
+                        <li><a href="#services" class="font-medium transition hover:text-primary-brown">Services</a></li>
+                        <li><a href="#portfolio" class="font-medium transition hover:text-primary-brown">Collection</a></li>
+                        <li><a href="#testimonials" class="font-medium transition hover:text-primary-brown">Reviews</a></li>
+                        <li><a href="#contact" class="font-medium transition hover:text-primary-brown">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="#contact" class="px-6 py-2 font-semibold text-white transition rounded-lg bg-primary-dark hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">Get in Touch</a>
+                </div>
+
+                <!-- Mobile Hamburger Menu -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="fixed top-0 left-0 z-40 w-full h-screen p-8 transition duration-300 transform -translate-x-full bg-white shadow-lg md:hidden">
+            <div class="flex items-center justify-between mb-8">
+                <a href="#hero" class="flex items-center text-primary-dark">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 8L12 3L21 8" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                      <path d="M12 13V21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                      <path d="M7 8.5V15C7 17 9 19 12 19C15 19 17 17 17 15V8.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-2xl font-bold font-heading">Classic Bikes</span>
+                </a>
+                <button id="close-menu-button" aria-label="Close mobile menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <ul class="flex flex-col space-y-6">
+                <li><a href="#about" class="block py-2 text-xl font-medium transition hover:text-primary-brown">About Us</a></li>
+                <li><a href="#services" class="block py-2 text-xl font-medium transition hover:text-primary-brown">Services</a></li>
+                <li><a href="#portfolio" class="block py-2 text-xl font-medium transition hover:text-primary-brown">Collection</a></li>
+                <li><a href="#testimonials" class="block py-2 text-xl font-medium transition hover:text-primary-brown">Reviews</a></li>
+                <li><a href="#contact" class="block py-2 text-xl font-medium transition hover:text-primary-brown">Contact</a></li>
+            </ul>
+            <div class="mt-12">
+                <a href="#contact" class="block w-full px-6 py-3 font-semibold text-center text-white transition rounded-lg bg-primary-dark hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">Book a Viewing</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1570990521442-be47cf44503f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwxfHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="relative z-10 flex items-center h-full px-4 mx-auto max-w-7xl">
+                <div class="text-center text-white">
+                    <h1 class="mb-6 text-5xl font-bold leading-tight md:text-7xl font-heading">
+                        Experience the <span class="text-primary-brown">Thrill</span> of Timeless Rides
+                    </h1>
+                    <p class="mb-8 text-lg md:text-xl font-light leading-relaxed">
+                        Your premier destination for the latest motorcycle models and meticulously restored classics. Discover unparalleled quality and service.
+                    </p>
+                    <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                        <a href="#services" class="px-8 py-3 text-lg font-semibold transition rounded-lg bg-primary-brown hover:bg-primary-dark focus-visible:ring-2 focus-visible:ring-primary-brown focus-visible:ring-offset-2">Explore Our Collection</a>
+                        <a href="#contact" class="px-8 py-3 text-lg font-semibold transition border-2 border-white rounded-lg hover:bg-white hover:text-primary-dark focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2">Rent or Buy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container px-4 mx-auto">
+                <div class="grid items-center gap-12 md:grid-cols-2">
+                    <div>
+                        <h2 class="mb-6 text-4xl font-bold font-heading text-primary-dark">Where Passion Meets Precision</h2>
+                        <p class="mb-4 text-lg leading-relaxed">
+                            Founded by motorcycle enthusiasts with decades of collective experience, Classic Bikes is more than just a showroom – it's a sanctuary for riders. We believe in the enduring spirit of the two-wheeled machine, blending the nostalgia of timeless designs with the cutting-edge technology of today's finest motorcycles.
+                        </p>
+                        <p class="mb-6 text-lg leading-relaxed">
+                            Our commitment is to provide you with not only exceptional bikes but also a trustworthy and transparent buying or renting experience. We meticulously inspect every vehicle, ensuring you get a ride that’s as reliable as it is beautiful.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#portfolio" class="px-6 py-3 font-semibold transition rounded-lg bg-primary-dark text-white hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">View Our Inventory</a>
+                            <a href="#contact" class="px-6 py-3 font-medium transition border-2 rounded-lg hover:border-primary-dark hover:text-primary-dark focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1521078803125-7efd09b65b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwyfHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-light">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="mb-4 text-4xl font-bold font-heading text-primary-dark">Our Premier Services</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">Discover the perfect ride for every journey, whether you're looking to own or experience.</p>
+                </div>
+                <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Card 1: Bike Sale -->
+                    <div class="p-6 transition duration-300 bg-white rounded-lg shadow-lg group hover:shadow-card-hover">
+                        <div class="mb-4">
+                            <img src="https://images.unsplash.com/photo-1661475758585-fb288a5a69a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwzfHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading text-primary-dark group-hover:text-primary-brown">Bike Sale</h3>
+                        <p class="mb-5 text-lg leading-relaxed">Explore our curated collection of the latest models from top brands. Find your dream bike with our expert guidance.</p>
+                        <a href="#contact" class="inline-block px-5 py-2 font-semibold transition rounded-lg bg-primary-dark text-white hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">View Bikes</a>
+                    </div>
+
+                    <!-- Card 2: Bike Rental -->
+                    <div class="p-6 transition duration-300 bg-white rounded-lg shadow-lg group hover:shadow-card-hover">
+                        <div class="mb-4">
+                            <img src="https://images.unsplash.com/photo-1618792170395-52b9eaa1c32b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHw0fHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading text-primary-dark group-hover:text-primary-brown">Bike Rental</h3>
+                        <p class="mb-5 text-lg leading-relaxed">Experience freedom on two wheels. We offer flexible rental options for short trips or extended adventures.</p>
+                        <a href="#contact" class="inline-block px-5 py-2 font-semibold transition rounded-lg bg-primary-dark text-white hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">Rent a Bike</a>
+                    </div>
+
+                    <!-- Card 3: Classic Restoration / Expertise (Implied from competitors) -->
+                    <div class="p-6 transition duration-300 bg-white rounded-lg shadow-lg group hover:shadow-card-hover">
+                        <div class="mb-4">
+                            <img src="https://images.unsplash.com/photo-1598546549987-c691067ce569?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHw1fHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading text-primary-dark group-hover:text-primary-brown">Expert Advice</h3>
+                        <p class="mb-5 text-lg leading-relaxed">Benefit from our deep knowledge of motorcycles. We offer personalized recommendations and support.</p>
+                        <a href="#contact" class="inline-block px-5 py-2 font-semibold transition rounded-lg bg-primary-dark text-white hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">Get Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="py-20 bg-white">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="mb-4 text-4xl font-bold font-heading text-primary-dark">Why Choose Classic Bikes?</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">We stand out with our commitment to quality, trust, and customer satisfaction.</p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="w-16 h-16 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading text-primary-dark">Latest Models & Classics</h3>
+                        <p class="text-lg leading-relaxed">Access to the newest releases alongside iconic vintage bikes.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="w-16 h-16 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6.001 0h6M4.5 19h15.001a2 2 0 002-2V6.7a2 2 0 00-2-2H6.001a2 2 0 00-2 2V17a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading text-primary-dark">Trustworthy & Transparent</h3>
+                        <p class="text-lg leading-relaxed">Our reputation is built on honesty and integrity in every transaction.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="w-16 h-16 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading text-primary-dark">Unmatched Expertise</h3>
+                        <p class="text-lg leading-relaxed">Years of experience ensure you get the best advice and service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Collection Section -->
+        <section id="portfolio" class="py-20 bg-gray-light">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="mb-4 text-4xl font-bold font-heading text-primary-dark">Featured Collection</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">A glimpse into the exceptional machines you'll find at Classic Bikes.</p>
+                </div>
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="overflow-hidden transition duration-300 rounded-lg shadow-lg group bg-white hover:shadow-card-hover">
+                        <img src="https://images.unsplash.com/photo-1689090865949-da9f2677e7b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHw2fHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        <div class="p-6">
+                            <h3 class="mb-2 text-2xl font-bold font-heading text-primary-dark">Vintage Cafe Racer</h3>
+                            <p class="mb-4 text-lg leading-relaxed text-gray-600">Timeless design meets modern performance.</p>
+                            <span class="block text-xl font-bold font-heading text-primary-brown">$15,000</span>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden transition duration-300 rounded-lg shadow-lg group bg-white hover:shadow-card-hover">
+                        <img src="https://images.unsplash.com/photo-1623631653467-41aed67c20f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHw3fHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        <div class="p-6">
+                            <h3 class="mb-2 text-2xl font-bold font-heading text-primary-dark">Modern Sportbike</h3>
+                            <p class="mb-4 text-lg leading-relaxed text-gray-600">Unleash speed and agility.</p>
+                            <span class="block text-xl font-bold font-heading text-primary-brown">$18,500</span>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden transition duration-300 rounded-lg shadow-lg group bg-white hover:shadow-card-hover">
+                        <img src="https://images.unsplash.com/photo-1611406259389-77217cd5bbc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHw4fHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        <div class="p-6">
+                            <h3 class="mb-2 text-2xl font-bold font-heading text-primary-dark">Classic Cruiser</h3>
+                            <p class="mb-4 text-lg leading-relaxed text-gray-600">Iconic style for the open road.</p>
+                            <span class="block text-xl font-bold font-heading text-primary-brown">$12,000</span>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden transition duration-300 rounded-lg shadow-lg group bg-white hover:shadow-card-hover">
+                        <img src="https://images.unsplash.com/photo-1698277314312-bd23839c200f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHw5fHxiaWtlJTIwcmVudCUyMCUyQyUyMGJpa2UlMjBzYWxlfGVufDB8fHx8MTc3NDk1NzE5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        <div class="p-6">
+                            <h3 class="mb-2 text-2xl font-bold font-heading text-primary-dark">Adventure Tourer</h3>
+                            <p class="mb-4 text-lg leading-relaxed text-gray-600">Conquer any terrain.</p>
+                            <span class="block text-xl font-bold font-heading text-primary-brown">$20,000</span>
+                        </div>
+                    </div>
+                     <div class="overflow-hidden transition duration-300 rounded-lg shadow-lg group bg-white hover:shadow-card-hover">
+                        <img src="https://images.unsplash.com/photo-1764757262057-5ce23c6a7c6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwxMHx8YmlrZSUyMHJlbnQlMjAlMkMlMjBiaWtlJTIwc2FsZXxlbnwwfHx8fDE3NzQ5NTcxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        <div class="p-6">
+                            <h3 class="mb-2 text-2xl font-bold font-heading text-primary-dark">Classic Scooter</h3>
+                            <p class="mb-4 text-lg leading-relaxed text-gray-600">Chic urban mobility.</p>
+                            <span class="block text-xl font-bold font-heading text-primary-brown">$5,500</span>
+                        </div>
+                    </div>
+                     <div class="overflow-hidden transition duration-300 rounded-lg shadow-lg group bg-white hover:shadow-card-hover">
+                        <img src="https://images.unsplash.com/photo-1649766509890-aa9f66678260?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwxMXx8YmlrZSUyMHJlbnQlMjAlMkMlMjBiaWtlJTIwc2FsZXxlbnwwfHx8fDE3NzQ5NTcxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                        <div class="p-6">
+                            <h3 class="mb-2 text-2xl font-bold font-heading text-primary-dark">Custom Bobber</h3>
+                            <p class="mb-4 text-lg leading-relaxed text-gray-600">Stripped-down, raw power.</p>
+                            <span class="block text-xl font-bold font-heading text-primary-brown">$16,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-14">
+                    <a href="#contact" class="px-8 py-3 text-lg font-semibold transition rounded-lg bg-primary-dark text-white hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2">View Full Inventory</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="mb-4 text-4xl font-bold font-heading text-primary-dark">What Our Riders Say</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">Hear from satisfied customers who found their perfect ride with us.</p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Testimonial 1 -->
+                    <div class="p-6 transition duration-300 rounded-lg shadow-lg bg-gray-light hover:shadow-card-hover">
+                        <p class="mb-5 text-lg italic leading-relaxed">"I've been looking for a specific vintage model for ages, and Classic Bikes not only had it but in immaculate condition. The team was incredibly knowledgeable and honest. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1614141476272-2499493b0b94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwxMnx8YmlrZSUyMHJlbnQlMjAlMkMlMjBiaWtlJTIwc2FsZXxlbnwwfHx8fDE3NzQ5NTcxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-xl font-bold font-heading text-primary-dark">Ahmed Khan</p>
+                                <p class="text-sm text-gray-600">Satisfied Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="p-6 transition duration-300 rounded-lg shadow-lg bg-gray-light hover:shadow-card-hover">
+                        <p class="mb-5 text-lg italic leading-relaxed">"Needed a bike for a weekend getaway and their rental process was seamless. The bike was well-maintained and perfect for the roads. Top-notch service from start to finish."</p>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1668686885206-72ac00d9e6da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwxM3x8YmlrZSUyMHJlbnQlMjAlMkMlMjBiaWtlJTIwc2FsZXxlbnwwfHx8fDE3NzQ5NTcxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-xl font-bold font-heading text-primary-dark">Fatima Ali</p>
+                                <p class="text-sm text-gray-600">Happy Renter</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="p-6 transition duration-300 rounded-lg shadow-lg bg-gray-light hover:shadow-card-hover">
+                        <p class="mb-5 text-lg italic leading-relaxed">"The team at Classic Bikes really knows their stuff. They helped me find a bike that perfectly matched my needs and budget. I trust them completely with my motorcycle needs."</p>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1630302215730-fa73a8158731?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTYyODh8MHwxfHNlYXJjaHwxNHx8YmlrZSUyMHJlbnQlMjAlMkMlMjBiaWtlJTIwc2FsZXxlbnwwfHx8fDE3NzQ5NTcxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Product image" style="max-width:100%;">
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-xl font-bold font-heading text-primary-dark">Usman Ghani</p>
+                                <p class="text-sm text-gray-600">Repeat Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process / How We Work Section -->
+        <section id="process" class="py-20 bg-primary-dark text-white">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="mb-4 text-4xl font-bold font-heading">Our Simple Process</h2>
+                    <p class="text-lg leading-relaxed text-gray-300">Getting your dream bike or starting your adventure is easy with us.</p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <span class="flex items-center justify-center w-20 h-20 text-3xl font-bold border-2 rounded-full border-primary-brown text-primary-brown">1</span>
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading">Explore & Select</h3>
+                        <p class="text-lg leading-relaxed text-gray-300">Browse our extensive online catalog or visit our showroom to find your perfect motorcycle.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <span class="flex items-center justify-center w-20 h-20 text-3xl font-bold border-2 rounded-full border-primary-brown text-primary-brown">2</span>
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading">Consult & Decide</h3>
+                        <p class="text-lg leading-relaxed text-gray-300">Our expert team will guide you through sales or rental options, ensuring you make the best choice.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <span class="flex items-center justify-center w-20 h-20 text-3xl font-bold border-2 rounded-full border-primary-brown text-primary-brown">3</span>
+                        </div>
+                        <h3 class="mb-3 text-2xl font-bold font-heading">Ride Away</h3>
+                        <p class="text-lg leading-relaxed text-gray-300">Complete the paperwork and ride off on your new bike or start your rental journey!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Big CTA Banner -->
+        <section class="relative py-20 bg-primary-brown">
+            <div class="container px-4 mx-auto text-center text-white">
+                <h2 class="mb-6 text-4xl font-bold font-heading md:text-5xl">Ready to Hit the Road?</h2>
+                <p class="mb-8 text-xl leading-relaxed">Whether you're buying your dream machine or renting for an adventure, we're here to help you find exactly what you need.</p>
+                <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="px-8 py-3 text-lg font-semibold transition rounded-lg bg-primary-dark hover:bg-black focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2">Contact Us Today</a>
+                    <a href="#services" class="px-8 py-3 text-lg font-semibold transition border-2 border-white rounded-lg hover:bg-white hover:text-primary-brown focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container px-4 mx-auto">
+                <div class="grid gap-12 md:grid-cols-2">
+                    <div>
+                        <h2 class="mb-6 text-4xl font-bold font-heading text-primary-dark">Get in Touch</h2>
+                        <p class="mb-8 text-lg leading-relaxed">Have questions about sales, rentals, or our collection? Fill out the form below or reach out directly.</p>
+                        <div class="mb-6 space-y-4">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.468 4.398a1 1 0 00.948.684h5.568a1 1 0 00.948-.684l1.468-4.398A1 1 0 0117.72 3H21a2 2 0 012 2v12a2 2 0 01-2 2h-3.28a1 1 0 01-.948-.684l-1.468-4.398a1 1 0 00-.948-.684h-5.568a1 1 0 00-.948.684l-1.468 4.398A1 1 0 016.72 21H3a2 2 0 01-2-2V5z"></path></svg>
+                                <span class="text-lg font-medium">0310-222</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8.001 8.001 0 0111.314-11.314l3.474 3.474a1.998 1.998 0 01 0 2.827l-4.244 4.243z"></path></svg>
+                                <span class="text-lg font-medium">[Your City], [Your Region]</span> <!-- e.g., Multan, Punjab -->
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7-5 7 5M3 8l3.878 2.323m0 0V21m4.245-5.667a19.58 19.58 0 013.57-7.643m-3.57 7.643a19.58 19.58 0 003.57-7.643m-3.57 7.643A19.58 19.58 0 0110.374 15M4.883 3.595a19.583 19.583 0 014.671-3.595m0 0A19.583 19.583 0 007.54 0a19.583 19.583 0 004.671 3.595M7.54 0a19.583 19.583 0 006.313 4.444m4.444-4.444a19.583 19.583 0 006.313-4.444M8.948 12.335L3 8v12h7.938"></path></svg>
+                                <span class="text-lg font-medium">info@classicbikes.com</span> <!-- Placeholder -->
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" aria-label="Visit our Facebook" class="text-primary-dark hover:text-primary-brown"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.074c0-6.627-5.373-12-12-12-6.627 0-12 5.373-12 12 0 6.435 4.875 11.775 11 11.975V15.5h-4v-3.5h4v-2.677c0-4.035 2.464-6.323 6.162-6.323.872 0 1.64.067 1.877.098v3.5h-3.161c-2.11 0-2.515.995-2.515 2.449v1.849h4.698l-.59 3.5h-4.108v10.475c6.125-.2 11-5.54 11-11.975z"/></svg></a>
+                            <a href="#" aria-label="Visit our Instagram" class="text-primary-dark hover:text-primary-brown"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.743 0 8.351 0 7.343 0C6.335 0 5.863 0 5.322 0.132C3.756 0.343 2.669 1.43 2.457 2.996C2.325 3.478 2.325 3.997 2.325 7.201c0 3.204 0 4.325.132 4.807C2.575 13.574 3.669 14.668 5.322 14.879c.54.132 1.012.132 5.322.132s4.782 0 5.322-.132c1.653-.211 2.747-1.305 2.958-2.996.132-.54.132-1.012.132-5.322s0-4.782-.132-5.322c-.211-1.654-1.305-2.747-2.996-2.958C16.775 0 16.294 0 12 0zm0 1.538c4.884 0 4.984 0 5.783.087.69.087 1.11.387 1.447.724.337.337.637.757.724 1.447.087.8.087 1.001.087 5.783 0 4.782 0 4.984-.087 5.783-.087.69-.387 1.11-1.447.724-1.447-.337-.337-.757-.637-1.447-.724-.8-.087-1.001-.087-5.783-.087-4.782 0-4.984 0-5.783.087-.69.087-1.11.387-1.447.724-.337.337-.637.757-.724 1.447-.087.8-.087 1.001-.087 5.783 0 4.782 0 4.984.087 5.783.087.69.387 1.11 1.447.724 1.447-.337.337-.757.637-1.447.724-.8.087-1.001.087-5.783.087-4.782 0-4.984 0-5.783-.087-.69-.087-1.11-.387-1.447-.724-.337-.337-.757-.637-1.447-.724-.8-.087-1.001-.087-5.783-.087-4.782 0-4.984 0-5.783.087-.69.087-1.11.387-1.447.724-.337.337-.757.637-1.447.724-.8.087-1.001.087-5.783.087-4.782 0-4.984 0-5.783-.087-.69-.087-1.11-.387-1.447-.724-.337-.337-.757-.637-1.447-.724-.8-.087-1.001-.087-5.783-.087zm-1.718 8.193a3.805 3.805 0 117.61 0 3.805 3.805 0 01-7.61 0zm3.805 3.805a3.805 3.805 0 100-7.61 3.805 3.805 0 000 7.61zm3.415-7.61a3.003 3.003 0 110 6.007 3.003 3.003 0 010-6.007z"/></svg></a>
+                        </div>
+                    </div>
+                    <div>
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"> <!-- Replace with your Web3Forms Access Key -->
+                            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                                <div>
+                                    <label for="name" class="block mb-2 text-lg font-medium text-gray-700">Your Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border-2 rounded-lg focus:border-primary-brown focus:ring-primary-brown" placeholder="Enter your name">
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2 text-lg font-medium text-gray-700">Your Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border-2 rounded-lg focus:border-primary-brown focus:ring-primary-brown" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <label for="phone" class="block mb-2 text-lg font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border-2 rounded-lg focus:border-primary-brown focus:ring-primary-brown" placeholder="Enter your phone number (optional)">
+                            </div>
+                            <div class="mt-6">
+                                <label for="message" class="block mb-2 text-lg font-medium text-gray-700">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border-2 rounded-lg focus:border-primary-brown focus:ring-primary-brown" placeholder="Tell us what you need..."></textarea>
+                            </div>
+                            <div class="mt-8">
+                                <button type="submit" id="submit-button" class="w-full px-6 py-3 text-lg font-semibold transition rounded-lg bg-primary-dark text-white hover:bg-primary-brown focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                                    <span id="button-text">Send Message</span>
+                                    <span id="spinner" class="hidden lds-dual-ring"></span>
+                                </button>
+                            </div>
+                            <div id="form-message" class="mt-6 text-center"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-primary-dark text-gray-light">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+                <div>
+                    <!-- Logo and Brand Name -->
+                    <div class="flex items-center mb-4 space-x-2">
+                        <a href="#hero" class="flex items-center text-white hover:text-primary-brown">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3 8L12 3L21 8" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                              <path d="M12 13V21" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                              <path d="M7 8.5V15C7 17 9 19 12 19C15 19 17 17 17 15V8.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-2xl font-bold font-heading">Classic Bikes</span>
+                        </a>
+                    </div>
+                    <p class="text-lg leading-relaxed">Your trusted partner for premium motorcycle sales and rentals. We bring you the best of both worlds: timeless classics and the latest innovations.</p>
+                </div>
+                <div>
+                    <h4 class="mb-4 text-2xl font-bold font-heading">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="transition hover:text-primary-brown">About Us</a></li>
+                        <li><a href="#services" class="transition hover:text-primary-brown">Services</a></li>
+                        <li><a href="#portfolio" class="transition hover:text-primary-brown">Our Collection</a></li>
+                        <li><a href="#testimonials" class="transition hover:text-primary-brown">Reviews</a></li>
+                        <li><a href="#contact" class="transition hover:text-primary-brown">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-4 text-2xl font-bold font-heading">Visit Us</h4>
+                    <p class="mb-2">Classic Bikes Showroom</p>
+                    <p class="mb-2">[Your Street Address]</p>
+                    <p class="mb-2">[Your City], [Your Region], [Your Postal Code]</p>
+                    <p class="mb-2">Phone: 0310-222</p>
+                    <div class="flex items-center mt-4 space-x-4">
+                        <a href="#" aria-label="Visit our Facebook" class="text-gray-light hover:text-primary-brown"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.074c0-6.627-5.373-12-12-12-6.627 0-12 5.373-12 12 0 6.435 4.875 11.775 11 11.975V15.5h-4v-3.5h4v-2.677c0-4.035 2.464-6.323 6.162-6.323.872 0 1.64.067 1.877.098v3.5h-3.161c-2.11 0-2.515.995-2.515 2.449v1.849h4.698l-.59 3.5h-4.108v10.475c6.125-.2 11-5.54 11-11.975z"/></svg></a>
+                        <a href="#" aria-label="Visit our Instagram" class="text-gray-light hover:text-primary-brown"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.743 0 8.351 0 7.343 0C6.335 0 5.863 0 5.322 0.132C3.756 0.343 2.669 1.43 2.457 2.996C2.325 3.478 2.325 3.997 2.325 7.201c0 3.204 0 4.325.132 4.807C2.575 13.574 3.669 14.668 5.322 14.879c.54.132 1.012.132 5.322.132s4.782 0 5.322-.132c1.653-.211 2.747-1.305 2.958-2.996.132-.54.132-1.012.132-5.322s0-4.782-.132-5.322c-.211-1.654-1.305-2.747-2.996-2.958C16.775 0 16.294 0 12 0zm0 1.538c4.884 0 4.984 0 5.783.087.69.087 1.11.387 1.447.724.337.337.637.757.724 1.447.087.8.087 1.001.087 5.783 0 4.782 0 4.984-.087 5.783-.087.69-.387 1.11-1.447.724-1.447-.337-.337-.757-.637-1.447-.724-.8-.087-1.001-.087-5.783-.087-4.782 0-4.984 0-5.783.087-.69.087-1.11.387-1.447.724-.337.337-.757.637-1.447.724-.8.087-1.001.087-5.783.087-4.782 0-4.984 0-5.783.087-.69.087-1.11.387-1.447.724-.337.337-.757.637-1.447.724-.8.087-1.001.087-5.783.087-4.782 0-4.984 0-5.783.087-.69-.087-1.11-.387-1.447-.724-.337-.337-.757-.637-1.447-.724-.8-.087-1.001-.087-5.783-.087-4.782 0-4.984 0-5.783.087-.69.087-1.11.387-1.447.724-.337.337-.757.637-1.447.724-.8.087-1.001.087-5.783.087-4.782 0-4.984 0-5.783.087-.69-.087-1.11-.387-1.447-.724-.337-.337-.757-.637-1.447-.724-.8-.087-1.001-.087-5.783-.087zm-1.718 8.193a3.805 3.805 0 117.61 0 3.805 3.805 0 01-7.61 0zm3.805 3.805a3.805 3.805 0 100-7.61 3.805 3.805 0 000 7.61zm3.415-7.61a3.003 3.003 0 110 6.007 3.003 3.003 0 010-6.007z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 mt-12 border-t border-gray-700 text-center">
+                <p>&copy; 2023 Classic Bikes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a[href^="#"]');
+
+        // Open Mobile Menu
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('mobile-menu-open');
+            mobileMenuButton.setAttribute('aria-expanded', 'true');
+            // Trap focus within the mobile menu
+            mobileMenu.setAttribute('tabindex', '0');
+            mobileMenu.focus();
+        });
+
+        // Close Mobile Menu
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('mobile-menu-open');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            mobileMenu.removeAttribute('tabindex');
+            mobileMenuButton.focus(); // Return focus to the hamburger button
+        });
+
+        // Close mobile menu when clicking a link within it
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('mobile-menu-open');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenu.removeAttribute('tabindex');
+            });
+        });
+
+        // Close mobile menu with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('mobile-menu-open')) {
+                closeMenuButton.click();
+            }
+        });
+
+        // Form Submission Handling
+        const form = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-button');
+        const buttonText = document.getElementById('button-text');
+        const spinner = document.getElementById('spinner');
+        const formMessage = document.getElementById('form-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            submitButton.disabled = true;
+            buttonText.style.display = 'none';
+            spinner.style.display = 'inline-block';
+            formMessage.innerHTML = ''; // Clear previous messages
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    formMessage.innerHTML = `<p class="text-green-600 font-semibold">Message sent successfully! We'll be in touch soon.</p>`;
+                    form.reset(); // Reset form fields
+                } else {
+                    formMessage.innerHTML = `<p class="text-red-600 font-semibold">Error sending message. Please try again later.</p>`;
+                    console.error('Web3Forms Error:', result);
+                }
+            } catch (error) {
+                formMessage.innerHTML = `<p class="text-red-600 font-semibold">An unexpected error occurred. Please check your connection and try again.</p>`;
+                console.error('Fetch Error:', error);
+            } finally {
+                submitButton.disabled = false;
+                buttonText.style.display = 'inline-block';
+                spinner.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
